@@ -1,13 +1,8 @@
 FINAL_RTLIB = build/libMemorySafetyRuntime.a
 
 all: cmake-build rtlib
-
-# Uncomment which programming language you want to use for your runtime library
-rtlib:
-	@echo "Uncomment one of the following lines to select your language"
-	false
 #rtlib: rust
-#rtlib: cpp
+rtlib: cpp
 #rtlib: c
 
 .PHONY clean:
